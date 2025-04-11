@@ -14,22 +14,22 @@
     }
   </style>
 
-  <text class="ascii" x="-35" y="0" dominant-baseline="text-before-edge">
+  <text class="ascii" x="-40" y="0" dominant-baseline="text-before-edge">
     ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
   </text>
-  <text class="ascii" x="-35" y="22" dominant-baseline="text-before-edge">
+  <text class="ascii" x="-40" y="22" dominant-baseline="text-before-edge">
     ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
   </text>
-  <text class="ascii" x="-35" y="44" dominant-baseline="text-before-edge">
+  <text class="ascii" x="-40" y="44" dominant-baseline="text-before-edge">
      ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
   </text>
-  <text class="ascii" x="-35" y="66" dominant-baseline="text-before-edge">
+  <text class="ascii" x="-40" y="66" dominant-baseline="text-before-edge">
       ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
   </text>
-  <text class="ascii" x="-35" y="88" dominant-baseline="text-before-edge">
+  <text class="ascii" x="-40" y="88" dominant-baseline="text-before-edge">
        ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
   </text>
-  <text class="ascii" x="-35" y="110" dominant-baseline="text-before-edge">
+  <text class="ascii" x="-40" y="110" dominant-baseline="text-before-edge">
        ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
   </text>
 </svg>
