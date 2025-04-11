@@ -1,85 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 135" width="100%" height="auto">
-  <defs>
-    <linearGradient id="lavenderGradient" x1="5%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#b4befe" />
-      <stop offset="100%" stop-color="#cba6f7" />
-    </linearGradient>
-  </defs>
-  <style>
-    .ascii {
-      font-family: monospace;
-      font-size: 14px;
-      fill: url(#lavenderGradient);
-      white-space: pre;
-    }
+<div align="center">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 135" width="100%" height="auto">
+    <defs>
+      <linearGradient id="lavenderGradient" x1="5%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#b4befe" />
+        <stop offset="100%" stop-color="#cba6f7" />
+      </linearGradient>
+    </defs>
+    <style>
+      .ascii {
+        font-family: monospace;
+        font-size: 14px;
+        fill: url(#lavenderGradient);
+        white-space: pre;
+      }
 
-    /* Typing animation */
-    text {
-      opacity: 0;
-      animation: typing 3s steps(60) 0s forwards, loopTyping 6s steps(60) infinite;
-    }
-
-    /* Typing animation for each character */
-    @keyframes typing {
-      0% {
+      /* Typing animation */
+      text {
         opacity: 0;
+        animation: typing 3s steps(60) 0s forwards, loopTyping 6s steps(60) infinite;
       }
-      100% {
-        opacity: 1;
-      }
-    }
 
-    /* Infinite loop animation */
-    @keyframes loopTyping {
-      0% {
-        opacity: 0;
+      /* Typing animation for each character */
+      @keyframes typing {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
-      10% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
 
-    /* Delay for each line's typing to start */
-    text:nth-child(1) {
-      animation-delay: 0s;
-    }
-    text:nth-child(2) {
-      animation-delay: 0s;
-    }
-    text:nth-child(3) {
-      animation-delay: 0s;
-    }
-    text:nth-child(4) {
-      animation-delay: 0s;
-    }
-    text:nth-child(5) {
-      animation-delay: 0s;
-    }
-    text:nth-child(6) {
-      animation-delay: 0s;
-    }
-  </style>
+      /* Infinite loop animation */
+      @keyframes loopTyping {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
 
-  <!-- Text lines -->
-  <text class="ascii" x="-40" y="0" dominant-baseline="text-before-edge">
-    ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
-  </text>
-  <text class="ascii" x="-40" y="22" dominant-baseline="text-before-edge">
-    ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
-  </text>
-  <text class="ascii" x="-40" y="44" dominant-baseline="text-before-edge">
-     ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
-  </text>
-  <text class="ascii" x="-40" y="66" dominant-baseline="text-before-edge">
+      /* Delay for each line's typing to start */
+      text:nth-child(1) {
+        animation-delay: 0s;
+      }
+      text:nth-child(2) {
+        animation-delay: 0s;
+      }
+      text:nth-child(3) {
+        animation-delay: 0s;
+      }
+      text:nth-child(4) {
+        animation-delay: 0s;
+      }
+      text:nth-child(5) {
+        animation-delay: 0s;
+      }
+      text:nth-child(6) {
+        animation-delay: 0s;
+      }
+    </style>
+
+    <!-- Text lines -->
+    <text class="ascii" x="-40" y="0" dominant-baseline="text-before-edge">
+      ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
+    </text>
+    <text class="ascii" x="-40" y="22" dominant-baseline="text-before-edge">
+      ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
+    </text>
+    <text class="ascii" x="-40" y="44" dominant-baseline="text-before-edge">
+      ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
+    </text>
+    <text class="ascii" x="-40" y="66" dominant-baseline="text-before-edge">
       ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
-  </text>
-  <text class="ascii" x="-40" y="88" dominant-baseline="text-before-edge">
-       ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
-  </text>
-  <text class="ascii" x="-40" y="110" dominant-baseline="text-before-edge">
-       ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
-  </text>
-</svg>
+    </text>
+    <text class="ascii" x="-40" y="88" dominant-baseline="text-before-edge">
+      ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
+    </text>
+    <text class="ascii" x="-40" y="110" dominant-baseline="text-before-edge">
+      ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
+    </text>
+  </svg>
+</div>
