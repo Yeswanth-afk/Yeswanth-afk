@@ -20,24 +20,24 @@
   </style>
 
   <text class="intro" x="-10" y="10" dominant-baseline="text-before-edge">
-    👋 Hi, I'm Yeswanth S
+    👋 Hi, I'm
   </text>
-  <text class="ascii" x="-35" y="60" dominant-baseline="text-before-edge">
+  <text class="ascii" x="-35" y="50" dominant-baseline="text-before-edge">
     ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
   </text>
-  <text class="ascii" x="-35" y="82" dominant-baseline="text-before-edge">
+  <text class="ascii" x="-35" y="72" dominant-baseline="text-before-edge">
     ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
   </text>
-  <text class="ascii" x="-35" y="104" dominant-baseline="text-before-edge">
+  <text class="ascii" x="-35" y="94" dominant-baseline="text-before-edge">
      ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
   </text>
-  <text class="ascii" x="-35" y="126" dominant-baseline="text-before-edge">
+  <text class="ascii" x="-35" y="116" dominant-baseline="text-before-edge">
       ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
   </text>
-  <text class="ascii" x="-35" y="148" dominant-baseline="text-before-edge">
+  <text class="ascii" x="-35" y="128" dominant-baseline="text-before-edge">
        ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
   </text>
-  <text class="ascii" x="-35" y="170" dominant-baseline="text-before-edge">
+  <text class="ascii" x="-35" y="160" dominant-baseline="text-before-edge">
        ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
   </text>
 </svg>
