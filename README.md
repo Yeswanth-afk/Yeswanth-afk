@@ -19,10 +19,8 @@ A full-stack app that detects emotions from:
 📸 Images
 🎥 Videos
 📹 Live webcam feed
-  
-yeswanth@github:~$ echo "Tech Stack:"
-  
-🧠 Tech Stack:
+
+🧠 Tech Stack (Used in Emotion Recognition App):
   Frontend: HTML, CSS, JS
   Backend: Flask
   ML: TensorFlow
@@ -32,8 +30,8 @@ yeswanth@github:~$ ls tech_stack/
   
 📁 Languages:         Python, JavaScript  
 📁 Frameworks:        Flask, TensorFlow  
-📁 Tools:             Git, GitHub, OpenCV, Jupyter  
-📁 OS & Shell:        Linux, Bash
+📁 Tools:             Git, GitHub, OpenCV, Jupyter, Docker  
+📁 OS & Shell:        Linux, Bash  
 
 yeswanth@github:~$ nano learning.txt
   
