@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 135" width="100%" height="auto">
   <defs>
     <linearGradient id="lavenderGradient" x1="5%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#b4befe" />
@@ -14,22 +14,22 @@
     }
   </style>
 
-  <text class="ascii" x="-35" y="20">
+  <text class="ascii" x="-35" y="0" dominant-baseline="text-before-edge">
     ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
   </text>
-  <text class="ascii" x="-35" y="40">
+  <text class="ascii" x="-35" y="22" dominant-baseline="text-before-edge">
     ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
   </text>
-  <text class="ascii" x="-35" y="60">
+  <text class="ascii" x="-35" y="44" dominant-baseline="text-before-edge">
      ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
   </text>
-  <text class="ascii" x="-35" y="80">
+  <text class="ascii" x="-35" y="66" dominant-baseline="text-before-edge">
       ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
   </text>
-  <text class="ascii" x="-35" y="100">
+  <text class="ascii" x="-35" y="88" dominant-baseline="text-before-edge">
        ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
   </text>
-  <text class="ascii" x="-35" y="120">
+  <text class="ascii" x="-35" y="110" dominant-baseline="text-before-edge">
        ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
   </text>
 </svg>
