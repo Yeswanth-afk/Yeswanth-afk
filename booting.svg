@@ -51,7 +51,7 @@
 
     .stroke-text {
       font-family: monospace;
-      font-size: 90px;
+      font-size: 180px;
       fill: none;
       stroke-width: 3;
       stroke-dasharray: 1000;
@@ -115,7 +115,7 @@
   </text>
 
   <!-- Stroke Text with gradient -->
-  <text x="0" y="170" class="stroke-text">
+  <text x="0" y="230" class="stroke-text">
     YESWANTH S
     <animate attributeName="opacity" from="0" to="1" dur="3s" begin="10s" fill="freeze"/>
   </text>
