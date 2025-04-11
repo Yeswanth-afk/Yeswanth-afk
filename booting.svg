@@ -56,17 +56,29 @@
       }
     }
 
-    /* Bouncing effect */
-    .bouncing {
-      animation: bounce 3s infinite;
+    /* Typewriter effect - step-by-step display of each character */
+    .typewriter {
+      animation: typewriter 0.5s steps(40) 0.5s forwards; /* 0.5-second duration with 0.5s delay */
+      white-space: pre;
+      overflow: hidden;
     }
 
-    @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
+    @keyframes typewriter {
+      from {
+        width: 0;
       }
-      50% {
-        transform: translateY(-20px); /* Adjust height of bounce */
+      to {
+        width: 100%;
+      }
+    }
+
+    /* Fade-in animation for smoother transition */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
       }
     }
   </style>
@@ -100,34 +112,34 @@
     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10s" fill="freeze"/>
   </text>
 
-  <!-- ASCII Art Banner (Bouncing Animation with Opacity) -->
-  <text class="ascii bouncing" x="-40" y="120" dominant-baseline="text-before-edge">
+  <!-- ASCII Art with Faster Typewriter Effect (0.5 seconds duration) -->
+  <text class="ascii typewriter" x="-40" y="120" dominant-baseline="text-before-edge">
     ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
-    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10.5s" fill="freeze"/>
   </text>
 
-  <text class="ascii bouncing" x="-40" y="142" dominant-baseline="text-before-edge">
+  <text class="ascii typewriter" x="-40" y="142" dominant-baseline="text-before-edge">
     ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
-    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10.2s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="11s" fill="freeze"/>
   </text>
 
-  <text class="ascii bouncing" x="-40" y="164" dominant-baseline="text-before-edge">
+  <text class="ascii typewriter" x="-40" y="164" dominant-baseline="text-before-edge">
      ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
-     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10.4s" fill="freeze"/>
+     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="11.5s" fill="freeze"/>
   </text>
 
-  <text class="ascii bouncing" x="-40" y="186" dominant-baseline="text-before-edge">
+  <text class="ascii typewriter" x="-40" y="186" dominant-baseline="text-before-edge">
       ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
-      <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10.6s" fill="freeze"/>
+      <animate attributeName="opacity" from="0" to="1" dur="2s" begin="12s" fill="freeze"/>
   </text>
 
-  <text class="ascii bouncing" x="-40" y="208" dominant-baseline="text-before-edge">
+  <text class="ascii typewriter" x="-40" y="208" dominant-baseline="text-before-edge">
        ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
-       <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10.8s" fill="freeze"/>
+       <animate attributeName="opacity" from="0" to="1" dur="2s" begin="12.5s" fill="freeze"/>
   </text>
 
-  <text class="ascii bouncing" x="-40" y="230" dominant-baseline="text-before-edge">
+  <text class="ascii typewriter" x="-40" y="230" dominant-baseline="text-before-edge">
        ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
-       <animate attributeName="opacity" from="0" to="1" dur="2s" begin="11s" fill="freeze"/>
+       <animate attributeName="opacity" from="0" to="1" dur="2s" begin="13s" fill="freeze"/>
   </text>
 </svg>
