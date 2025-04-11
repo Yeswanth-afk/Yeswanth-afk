@@ -19,6 +19,7 @@
       animation: typing 3s steps(60) 1s forwards;
     }
 
+    /* Typing animation for each character */
     @keyframes typing {
       0% {
         opacity: 0;
@@ -28,27 +29,28 @@
       }
     }
 
-    /* Delayed animation for each line */
+    /* Delayed typing for each line */
     text:nth-child(1) {
       animation-delay: 0s;
     }
     text:nth-child(2) {
-      animation-delay: 0.5s;
+      animation-delay: 0s;
     }
     text:nth-child(3) {
-      animation-delay: 1s;
+      animation-delay: 0s;
     }
     text:nth-child(4) {
-      animation-delay: 1.5s;
+      animation-delay: 0s;
     }
     text:nth-child(5) {
-      animation-delay: 2s;
+      animation-delay: 0s;
     }
     text:nth-child(6) {
-      animation-delay: 2.5s;
+      animation-delay: 0s;
     }
   </style>
 
+  <!-- Text lines -->
   <text class="ascii" x="-40" y="0" dominant-baseline="text-before-edge">
     ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
   </text>
