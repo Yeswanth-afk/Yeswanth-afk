@@ -2,13 +2,7 @@
 <img 
   src="https://raw.githubusercontent.com/Yeswanth-afk/Yeswanth-afk/main/booting.svg" 
   alt="Yeswanth's Logo" 
-  style="width: 280px;  display: block; margin: 20px 0;" />
-👋 Hi, I'm 
-  
-<img 
-  src="https://raw.githubusercontent.com/Yeswanth-afk/Yeswanth-afk/main/terminal-card.svg" 
-  alt="Yeswanth's Logo" 
-  style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px 0;" />
+  style="width: 100%;  display: block; margin: 20px 0;" />
 
 I'm a full-stack developer passionate about Linux and AI/ML applications.  
 I build robust web apps and integrate machine learning into real-world solutions.
