@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 135" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" width="100%" height="auto">
   <defs>
     <linearGradient id="lavenderGradient" x1="5%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#b4befe" />
@@ -11,41 +11,49 @@
       font-size: 14px;
       fill: url(#lavenderGradient);
       white-space: pre;
-      opacity: 1;
-      animation: bounce 2s ease-in-out infinite;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
     }
-
-    @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
+    .ascii.active {
+      opacity: 1;
     }
   </style>
 
-  <text class="ascii" x="0" y="0" dominant-baseline="text-before-edge">
-    ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
-  </text>
+  <g id="art1" class="ascii active">
+    <text x="0" y="0">██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗</text>
+    <text x="0" y="22">╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝</text>
+    <text x="0" y="44"> ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗</text>
+    <text x="0" y="66">  ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║</text>
+    <text x="0" y="88">   ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║</text>
+    <text x="0" y="110">   ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝</text>
+  </g>
 
-  <text class="ascii" x="0" y="22" dominant-baseline="text-before-edge">
-    ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
-  </text>
+  <g id="art2" class="ascii">
+    <text x="0" y="0">__   _______ ______        ___    _   _ _____ _   _   ____  </text>
+    <text x="0" y="22">\ \ / / ____/ ___\ \      / / \  | \ | |_   _| | | | / ___| </text>
+    <text x="0" y="44"> \ V /|  _| \___ \\ \ /\ / / _ \ |  \| | | | | |_| | \___ \ </text>
+    <text x="0" y="66">  | | | |___ ___) |\ V  V / ___ \| |\  | | | |  _  |  ___) |</text>
+    <text x="0" y="88">  |_| |_____|____/  \_/\_/_/   \_\_| \_| |_| |_| |_| |____/ </text>
+  </g>
 
-  <text class="ascii" x="0" y="44" dominant-baseline="text-before-edge">
-     ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
-  </text>
-
-  <text class="ascii" x="0" y="66" dominant-baseline="text-before-edge">
-      ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
-  </text>
-
-  <text class="ascii" x="0" y="88" dominant-baseline="text-before-edge">
-       ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
-  </text>
-
-  <text class="ascii" x="0" y="110" dominant-baseline="text-before-edge">
-       ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
-  </text>
+  <g id="art3" class="ascii">
+    <text x="0" y="0">oooooo   oooo oooooooooooo  .oooooo..o oooooo   oooooo     oooo       .o.       ooooo      ooo ooooooooooooo ooooo   ooooo       .oooooo..o</text>
+    <text x="0" y="22"> `888.   .8'  `888'     `8 d8P'    `Y8  `888.    `888.     .8'       .888.      `888b.     `8' 8'   888   `8 `888'   `888'      d8P'    `Y8</text>
+    <text x="0" y="44">  `888. .8'    888         Y88bo.        `888.   .8888.   .8'       .8"888.      8 `88b.    8       888       888     888       Y88bo.     </text>
+    <text x="0" y="66">   `888.8'     888oooo8     `"Y8888o.     `888  .8'`888. .8'       .8' `888.     8   `88b.  8       888       888ooooo888        `"Y8888o. </text>
+    <text x="0" y="88">    `888'      888    "         `"Y88b     `888.8'  `888.8'       .88ooo8888.    8     `88b.8       888       888     888            `"Y88b</text>
+    <text x="0" y="110">     888       888       o oo     .d8P      `888'    `888'       .8'     `888.   8       `888       888       888     888       oo     .d8P</text>
+    <text x="0" y="132">    o888o     o888ooooood8 8""88888P'        `8'      `8'       o88o     o8888o o8o        `8      o888o     o888o   o888o      8""88888P' </text>
+  </g>
 </svg>
+
+<script>
+  const arts = document.querySelectorAll('.ascii');
+  let current = 0;
+
+  setInterval(() => {
+    arts[current].classList.remove('active');
+    current = (current + 1) % arts.length;
+    arts[current].classList.add('active');
+  }, 4000); // switch every 4 seconds
+</script>
