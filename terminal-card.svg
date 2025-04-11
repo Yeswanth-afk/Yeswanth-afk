@@ -13,22 +13,23 @@
       white-space: pre;
     }
   </style>
-  <text class="ascii" x="10" y="20">
+
+  <text class="ascii" x="0" y="20" text-anchor="start">
     ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
   </text>
-  <text class="ascii" x="10" y="40">
+  <text class="ascii" x="0" y="40" text-anchor="start">
     ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
   </text>
-  <text class="ascii" x="10" y="60">
+  <text class="ascii" x="0" y="60" text-anchor="start">
      ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
   </text>
-  <text class="ascii" x="10" y="80">
+  <text class="ascii" x="0" y="80" text-anchor="start">
       ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
   </text>
-  <text class="ascii" x="10" y="100">
+  <text class="ascii" x="0" y="100" text-anchor="start">
        ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
   </text>
-  <text class="ascii" x="10" y="120">
+  <text class="ascii" x="0" y="120" text-anchor="start">
        ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
   </text>
 </svg>
