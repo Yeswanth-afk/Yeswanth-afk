@@ -1,8 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="auto">
   <defs>
+    <!-- Dark Mode Gradient (Lavender) -->
     <linearGradient id="lavenderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#b4befe" />
       <stop offset="100%" stop-color="#cba6f7" />
+    </linearGradient>
+
+    <!-- Light Mode Gradient (Darker colors for contrast against white background) -->
+    <linearGradient id="lightModeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6e6ea7" />
+      <stop offset="100%" stop-color="#8a7cfc" />
     </linearGradient>
   </defs>
 
@@ -10,20 +17,32 @@
     .terminal {
       font-family: monospace;
       font-size: 18px;
-      fill: url(#lavenderGradient);
     }
+
     .ascii {
       font-family: monospace;
       font-size: 14px;
-      fill: url(#lavenderGradient);
       white-space: pre;
       opacity: 0;
     }
+
     .greeting {
       font-family: monospace;
       font-size: 18px;
       fill: white;
       opacity: 0;
+    }
+
+    /* Default gradient for dark mode */
+    .terminal, .ascii {
+      fill: url(#lavenderGradient);
+    }
+
+    /* Light mode gradient */
+    @media (prefers-color-scheme: light) {
+      .terminal, .ascii {
+        fill: url(#lightModeGradient);
+      }
     }
   </style>
 
@@ -56,7 +75,7 @@
     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10s" fill="freeze"/>
   </text>
 
-  <!-- ASCII Art Banner (Y positions adjusted) -->
+  <!-- ASCII Art Banner -->
   <text class="ascii" x="-40" y="120" dominant-baseline="text-before-edge">
     ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
     <animate attributeName="opacity" from="0" to="1" dur="3s" begin="10s" repeatCount="indefinite" />
