@@ -1,0 +1,75 @@
+<svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <style>
+      .terminal {
+        width: 100%;
+        height: 100%;
+        background-color: #1e1e2e;
+        color: #cdd6f4;
+        font-family: 'Fira Code', monospace;
+        font-size: 16px;
+        padding: 20px;
+        white-space: pre;
+        line-height: 1.5;
+      }
+      .command { color: #89b4fa; }
+      .highlight { color: #f9e2af; }
+      .success { color: #a6e3a1; }
+      .header { color: #cba6f7; font-weight: bold; }
+      .link { color: #a6e3a1; text-decoration: underline; }
+      a { color: #a6e3a1; text-decoration: none; }
+    </style>
+    <div xmlns="http://www.w3.org/1999/xhtml" class="terminal">
+yeswanth@github:~$ <span class="command">whoami</span>
+
+👋 Hi, I'm <span class="header">Yeswanth S</span>
+
+██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
+╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
+ ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
+  ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
+   ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
+   ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
+
+I'm a full-stack developer passionate about Linux and AI/ML applications.  
+I build robust web apps and integrate machine learning into real-world solutions.
+
+yeswanth@github:~$ <span class="command">cat projects.txt</span>
+
+🚀 Emotion Recognition App
+A full-stack app that detects emotions from:
+📸 Images
+🎥 Videos
+📹 Live webcam feed
+
+yeswanth@github:~$ <span class="command">echo "Tech Stack:"</span>
+
+🧠 Tech Stack:
+  Frontend: HTML, CSS, JS
+  Backend: Flask
+  ML: TensorFlow
+  CV: OpenCV
+
+yeswanth@github:~$ <span class="command">ls tech_stack/</span>
+
+📁 Languages:         Python, JavaScript  
+📁 Frameworks:        Flask, TensorFlow  
+📁 Tools:             Git, GitHub, OpenCV, Jupyter  
+📁 OS & Shell:        Linux, Bash
+
+yeswanth@github:~$ <span class="command">nano learning.txt</span>
+
+📘 Currently Learning:
+  - Advanced Full-Stack Development
+  - Linux Administration & Scripting
+
+yeswanth@github:~$ <span class="command">./contact_me.sh</span>
+
+📫 Email: yeswanthshanmugam@gmail.com  
+💬 Always open to tech chats & collabs!
+
+yeswanth@github:~$ <span class="command">echo "Thanks for stopping by!"</span>  
+<span class="success">✅ Thanks for visiting my profile! 🚀</span>
+    </div>
+  </foreignObject>
+</svg>
