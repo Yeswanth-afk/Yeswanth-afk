@@ -2,8 +2,8 @@
   <defs>
     <!-- Dark Mode Gradient -->
     <linearGradient id="lavenderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#b4befe" />
-      <stop offset="100%" stop-color="#cba6f7" />
+  <stop offset="0%" stop-color="#7a7fcd" />
+  <stop offset="100%" stop-color="#a079d4" />
     </linearGradient>
 
     <!-- Light Mode Gradient -->
