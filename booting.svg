@@ -22,31 +22,7 @@
     .greeting {
       font-family: monospace;
       font-size: 18px;
-      fill: white;
       opacity: 0;
-    }
-
-    /* Default gradient for light mode */
-    .terminal, .ascii {
-      fill: url(#lightModeGradient);
-    }
-
-    /* Dark mode gradient */
-    @media (prefers-color-scheme: dark) {
-      .terminal, .ascii {
-        fill: url(#lavenderGradient);
-      }
-
-      .greeting {
-        fill: white;
-      }
-    }
-
-    /* Light mode greeting text */
-    @media (prefers-color-scheme: light) {
-      .greeting {
-        fill: black;
-      }
     }
 
     .stroke-text {
@@ -57,17 +33,37 @@
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
       animation: drawText 10s ease-in-out forwards;
-      animation-delay: 10s; /* Add delay of 10 seconds */
+      animation-delay: 10s;
     }
 
-    /* Apply the light or dark gradient to stroke */
-    .stroke-text {
-      stroke: url(#lightModeGradient); /* Default light mode gradient */
+    /* Default gradient for light mode */
+    .terminal, .ascii {
+      fill: url(#lightModeGradient); /* Default light mode gradient */
     }
 
+    /* Dark mode gradient */
     @media (prefers-color-scheme: dark) {
+      .terminal, .ascii {
+        fill: url(#lavenderGradient); /* Dark mode gradient */
+      }
+
+      .greeting {
+        fill: white; /* Dark mode greeting text color */
+      }
+
       .stroke-text {
-        stroke: url(#lavenderGradient); /* Dark mode gradient */
+        stroke: url(#lavenderGradient); /* Dark mode stroke gradient */
+      }
+    }
+
+    /* Light mode stroke text */
+    @media (prefers-color-scheme: light) {
+      .greeting {
+        fill: black; /* Light mode greeting text color */
+      }
+
+      .stroke-text {
+        stroke: url(#lightModeGradient); /* Light mode stroke gradient */
       }
     }
 
@@ -81,6 +77,25 @@
       }
       100% {
         stroke-dashoffset: 0;
+      }
+    }
+
+    /* Fade-in for the ASCII text */
+    .ascii {
+      font-family: monospace;
+      font-size: 14px;
+      white-space: pre;
+      opacity: 0; /* Set initial opacity to 0 for fade-in effect */
+      animation: fadeIn 2s ease-in-out forwards;
+      animation-delay: 21s; /* Start 1 second after the name fades out */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
       }
     }
   </style>
@@ -117,6 +132,27 @@
   <!-- Stroke Text with gradient -->
   <text x="0" y="250" class="stroke-text">
     YESWANTH S
-    <animate attributeName="opacity" from="0" to="1" dur="3s" begin="10s" fill="freeze"/>
+    <animate attributeName="opacity" from="1" to="0" dur="1s" begin="20s" fill="freeze"/>
   </text>
+
+  <!-- ASCII Art -->
+  <text class="ascii" x="-40" y="130" dominant-baseline="text-before-edge">
+    ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
+  </text>
+  <text class="ascii" x="-40" y="152" dominant-baseline="text-before-edge">
+    ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
+  </text>
+  <text class="ascii" x="-40" y="174" dominant-baseline="text-before-edge">
+     ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
+  </text>
+  <text class="ascii" x="-40" y="196" dominant-baseline="text-before-edge">
+      ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
+  </text>
+  <text class="ascii" x="-40" y="218" dominant-baseline="text-before-edge">
+       ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
+  </text>
+  <text class="ascii" x="-40" y="240" dominant-baseline="text-before-edge">
+       ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
+  </text>
+
 </svg>
