@@ -3,8 +3,6 @@
   src="https://raw.githubusercontent.com/Yeswanth-afk/Yeswanth-afk/main/booting.svg" 
   alt="Yeswanth's Logo" 
   style="width: 300px;  display: block; margin: 20px 0;" />
-yeswanth@github:~$ whoami
-  
 👋 Hi, I'm 
   
 <img 
