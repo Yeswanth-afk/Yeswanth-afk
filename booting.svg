@@ -1,31 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200">
-  <rect x="0" y="0" width="500" height="200" fill="none" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="auto">
   <defs>
     <linearGradient id="lavenderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#b4befe; stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#cba6f7; stop-opacity:1" />
+      <stop offset="0%" stop-color="#b4befe" />
+      <stop offset="100%" stop-color="#cba6f7" />
     </linearGradient>
   </defs>
 
-  <text id="loadingText" x="0" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)">
+  <style>
+    .terminal {
+      font-family: monospace;
+      font-size: 24px;
+      fill: url(#lavenderGradient);
+    }
+    .ascii {
+      font-family: monospace;
+      font-size: 14px;
+      fill: url(#lavenderGradient);
+      white-space: pre;
+      opacity: 0;
+    }
+    .greeting {
+      font-family: monospace;
+      font-size: 18px;
+      fill: url(#lavenderGradient);
+      opacity: 0;
+    }
+  </style>
+
+  <!-- Terminal Boot Sequence -->
+  <text class="terminal" x="0" y="40">
     Loading...
     <animate attributeName="opacity" from="1" to="0" dur="2s" begin="0s" fill="freeze"/>
   </text>
 
-  <text id="bootingText" x="0" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)" opacity="0">
+  <text class="terminal" x="0" y="40" opacity="0">
     Booting... please wait.
     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="2s" fill="freeze"/>
     <animate attributeName="opacity" from="1" to="0" dur="2s" begin="5s" fill="freeze"/>
   </text>
 
-  <text id="profileText" x="0" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)" opacity="0">
+  <text class="terminal" x="0" y="40" opacity="0">
     Profile Loaded.
     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="6s" fill="freeze"/>
     <animate attributeName="opacity" from="1" to="0" dur="2s" begin="8s" fill="freeze"/>
   </text>
 
-  <text id="staticPrompt" x="0" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)" opacity="0">
+  <text class="terminal" x="0" y="40" opacity="0">
     yeswanth@github:~$ whoami
     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="9s" fill="freeze"/>
+  </text>
+
+  <!-- Greeting Text -->
+  <text class="greeting" x="0" y="90">
+    👋 Hi, I'm Yeswanth S
+    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10s" fill="freeze"/>
+  </text>
+
+  <!-- ASCII Art Banner (y values +20) -->
+  <text class="ascii" x="-40" y="120" dominant-baseline="text-before-edge">
+    ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
+    <animate attributeName="opacity" from="0" to="1" dur="3s" begin="10s" repeatCount="indefinite" />
+    <animate attributeName="x" from="-40" to="40" dur="3s" begin="10s" repeatCount="indefinite" />
+  </text>
+
+  <text class="ascii" x="-40" y="142" dominant-baseline="text-before-edge">
+    ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
+    <animate attributeName="opacity" from="0" to="1" dur="3s" begin="10.2s" repeatCount="indefinite" />
+    <animate attributeName="x" from="-40" to="40" dur="3s" begin="10.2s" repeatCount="indefinite" />
+  </text>
+
+  <text class="ascii" x="-40" y="164" dominant-baseline="text-before-edge">
+     ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
+     <animate attributeName="opacity" from="0" to="1" dur="3s" begin="10.4s" repeatCount="indefinite" />
+     <animate attributeName="x" from="-40" to="40" dur="3s" begin="10.4s" repeatCount="indefinite" />
+  </text>
+
+  <text class="ascii" x="-40" y="186" dominant-baseline="text-before-edge">
+      ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
+      <animate attributeName="opacity" from="0" to="1" dur="3s" begin="10.6s" repeatCount="indefinite" />
+      <animate attributeName="x" from="-40" to="40" dur="3s" begin="10.6s" repeatCount="indefinite" />
+  </text>
+
+  <text class="ascii" x="-40" y="208" dominant-baseline="text-before-edge">
+       ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
+       <animate attributeName="opacity" from="0" to="1" dur="3s" begin="10.8s" repeatCount="indefinite" />
+       <animate attributeName="x" from="-40" to="40" dur="3s" begin="10.8s" repeatCount="indefinite" />
+  </text>
+
+  <text class="ascii" x="-40" y="230" dominant-baseline="text-before-edge">
+       ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
+       <animate attributeName="opacity" from="0" to="1" dur="3s" begin="11s" repeatCount="indefinite" />
+       <animate attributeName="x" from="-40" to="40" dur="3s" begin="11s" repeatCount="indefinite" />
   </text>
 </svg>
