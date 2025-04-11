@@ -4,7 +4,7 @@ yeswanth@github:~$ whoami
 👋 Hi, I'm Yeswanth S
 
 <!-- SVG image embedded here -->
-<img src="https://raw.githubusercontent.com/Yeswanth-afk/Yeswanth-afk/main/terminal-card.svg" alt="Yeswanth's Logo" width="500" height="100" />
+<img src="https://raw.githubusercontent.com/Yeswanth-afk/Yeswanth-afk/main/terminal-card.svg" alt="Yeswanth's Logo" width="1000" height="100" />
 
   I'm a full-stack developer passionate about Linux and AI/ML applications.  
   I build robust web apps and integrate machine learning into real-world solutions.
