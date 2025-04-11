@@ -51,12 +51,12 @@
 
     .stroke-text {
       font-family: monospace;
-      font-size: 60px;
+      font-size: 90px;
       fill: none;
       stroke-width: 3;
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
-      animation: drawText 4s ease-in-out forwards;
+      animation: drawText 10s ease-in-out forwards;
       animation-delay: 10s; /* Add delay of 10 seconds */
     }
 
@@ -115,7 +115,7 @@
   </text>
 
   <!-- Stroke Text with gradient -->
-  <text x="0" y="160" class="stroke-text">
+  <text x="0" y="170" class="stroke-text">
     YESWANTH S
     <animate attributeName="opacity" from="0" to="1" dur="3s" begin="10s" fill="freeze"/>
   </text>
