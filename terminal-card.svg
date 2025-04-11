@@ -1,85 +1,34 @@
-<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="200px" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
   <style>
-    @keyframes typing {
-      0% { width: 0; }
-      100% { width: 100%; }
-    }
-
-    .terminal-text {
+    .typing {
       font-family: monospace;
       font-size: 20px;
-      fill: #d7ccc8;
-      stroke: #d7ccc8;
-      stroke-width: 0.5;
-      animation: typing 5s steps(30) infinite;
       white-space: nowrap;
       overflow: hidden;
+      border-right: 4px solid black;
+      width: 0;
+      animation: typing 5s steps(60) 1s forwards, blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink-caret {
+      50% {
+        border-color: transparent;
+      }
     }
   </style>
-
-  <rect width="100%" height="100%" fill="transparent"/>
-
-  <!-- Terminal text with typing animation -->
-  <text x="20" y="30" class="terminal-text">yeswanth@github:~$ whoami</text>
-  
-  <text x="20" y="60" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    👋 Hi, I'm Yeswanth S
-  </text>
-  <text x="20" y="90" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    I'm a full-stack developer passionate about Linux and AI/ML applications.
-  </text>
-  
-  <text x="20" y="120" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    🚀 Emotion Recognition App
-  </text>
-  <text x="20" y="150" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    A full-stack app that detects emotions from:
-  </text>
-  
-  <text x="20" y="180" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    📸 Images
-  </text>
-  <text x="20" y="210" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    🎥 Videos
-  </text>
-  <text x="20" y="240" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    📹 Live webcam feed
-  </text>
-
-  <text x="20" y="270" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    🧠 Tech Stack:
-  </text>
-  <text x="20" y="300" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    Frontend: HTML, CSS, JS
-  </text>
-  <text x="20" y="330" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    Backend: Flask
-  </text>
-  <text x="20" y="360" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    ML: TensorFlow
-  </text>
-  <text x="20" y="390" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    CV: OpenCV
-  </text>
-
-  <text x="20" y="420" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    📘 Currently Learning:
-  </text>
-  <text x="20" y="450" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    - Advanced Full-Stack Development
-  </text>
-  <text x="20" y="480" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    - Linux Administration & Scripting
-  </text>
-
-  <text x="20" y="510" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
-    📫 Contact Me:
-  </text>
-  <text x="20" y="540" style="fill:#a6e3a1; font-family:monospace; font-size:16px;">
-    yeswanthshanmugam@gmail.com
-  </text>
-
-  <text x="20" y="570" style="fill:#a6e3a1; font-family:monospace; font-size:16px;">
-    ✅ Thanks for visiting my profile! 🚀
-  </text>
+  <text class="typing" x="10" y="40">██████╗ ███████╗████████╗███████╗██████╗ ██╗   ██╗████████╗██████╗</text>
+  <text class="typing" x="10" y="70">██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔══██╗██║   ██║╚══██╔══╝██╔══██╗</text>
+  <text class="typing" x="10" y="100">██████╦╝█████╗     ██║   █████╗  ██████╦╝██║   ██║   ██║   ██████╦╝</text>
+  <text class="typing" x="10" y="130">██╔══██╗██╔══╝     ██║   ██╔══╝  ██╔══██╗██║   ██║   ██║   ██╔══██╗</text>
+  <text class="typing" x="10" y="160">██████╦╝███████╗   ██║   ███████╗██████╦╝╚██████╔╝   ██║   ██████╦╝</text>
+  <text class="typing" x="10" y="190">╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═════╝  ╚═════╝    ╚═╝   ╚═════╝</text>
 </svg>
