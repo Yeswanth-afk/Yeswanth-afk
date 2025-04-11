@@ -1,17 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1000 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" width="100%" height="auto">
   <style>
     .ascii-art {
       font-family: monospace;
-      font-size: 20px;
+      font-size: 16px;
       white-space: pre;
     }
   </style>
-  <text class="ascii-art" x="10" y="30">
+  <text class="ascii-art" x="10" y="20">
     ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
+  </text>
+  <text class="ascii-art" x="10" y="40">
     ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
+  </text>
+  <text class="ascii-art" x="10" y="60">
      ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
+  </text>
+  <text class="ascii-art" x="10" y="80">
       ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
+  </text>
+  <text class="ascii-art" x="10" y="100">
        ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
+  </text>
+  <text class="ascii-art" x="10" y="120">
        ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
   </text>
 </svg>
