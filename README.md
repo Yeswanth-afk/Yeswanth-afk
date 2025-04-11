@@ -1,7 +1,8 @@
 <pre>
 yeswanth@github:~$ whoami
   
-👋 Hi, I'm Yeswanth S
+👋 Hi, I'm 
+  
 <img 
   src="https://raw.githubusercontent.com/Yeswanth-afk/Yeswanth-afk/main/terminal-card.svg" 
   alt="Yeswanth's Logo" 
