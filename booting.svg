@@ -19,13 +19,6 @@
       font-size: 18px;
     }
 
-    .ascii {
-      font-family: monospace;
-      font-size: 14px;
-      white-space: pre;
-      opacity: 0;
-    }
-
     .greeting {
       font-family: monospace;
       font-size: 18px;
@@ -56,29 +49,38 @@
       }
     }
 
-    /* Typewriter effect - step-by-step display of each character */
-    .typewriter {
-      animation: typewriter 0.5s steps(40) 0.5s forwards; /* 0.5-second duration with 0.5s delay */
-      white-space: pre;
-      overflow: hidden;
+    .stroke-text {
+      font-family: monospace;
+      font-size: 60px;
+      fill: none;
+      stroke-width: 3;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: drawText 4s ease-in-out forwards;
+      animation-delay: 10s; /* Add delay of 10 seconds */
     }
 
-    @keyframes typewriter {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
+    /* Apply the light or dark gradient to stroke */
+    .stroke-text {
+      stroke: url(#lightModeGradient); /* Default light mode gradient */
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .stroke-text {
+        stroke: url(#lavenderGradient); /* Dark mode gradient */
       }
     }
 
-    /* Fade-in animation for smoother transition */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
+    /* Keyframe animation for drawing the stroke */
+    @keyframes drawText {
+      0% {
+        stroke-dashoffset: 1000;
       }
-      to {
-        opacity: 1;
+      50% {
+        stroke-dashoffset: 500; /* Create a pause effect halfway */
+      }
+      100% {
+        stroke-dashoffset: 0;
       }
     }
   </style>
@@ -112,34 +114,9 @@
     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10s" fill="freeze"/>
   </text>
 
-  <!-- ASCII Art with Faster Typewriter Effect (0.5 seconds duration) -->
-  <text class="ascii typewriter" x="-40" y="120" dominant-baseline="text-before-edge">
-    ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
-    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10.5s" fill="freeze"/>
-  </text>
-
-  <text class="ascii typewriter" x="-40" y="142" dominant-baseline="text-before-edge">
-    ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
-    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="11s" fill="freeze"/>
-  </text>
-
-  <text class="ascii typewriter" x="-40" y="164" dominant-baseline="text-before-edge">
-     ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
-     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="11.5s" fill="freeze"/>
-  </text>
-
-  <text class="ascii typewriter" x="-40" y="186" dominant-baseline="text-before-edge">
-      ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
-      <animate attributeName="opacity" from="0" to="1" dur="2s" begin="12s" fill="freeze"/>
-  </text>
-
-  <text class="ascii typewriter" x="-40" y="208" dominant-baseline="text-before-edge">
-       ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
-       <animate attributeName="opacity" from="0" to="1" dur="2s" begin="12.5s" fill="freeze"/>
-  </text>
-
-  <text class="ascii typewriter" x="-40" y="230" dominant-baseline="text-before-edge">
-       ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
-       <animate attributeName="opacity" from="0" to="1" dur="2s" begin="13s" fill="freeze"/>
+  <!-- Stroke Text with gradient -->
+  <text x="0" y="160" class="stroke-text">
+    YESWANTH S
+    <animate attributeName="opacity" from="0" to="1" dur="3s" begin="10s" fill="freeze"/>
   </text>
 </svg>
