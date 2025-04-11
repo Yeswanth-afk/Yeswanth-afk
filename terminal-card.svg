@@ -11,75 +11,41 @@
       font-size: 14px;
       fill: url(#lavenderGradient);
       white-space: pre;
-      opacity: 0;
-      animation: slideAndFade 6s ease-in-out infinite;
+      opacity: 1;
+      animation: bounce 2s ease-in-out infinite;
     }
 
-    .ascii:nth-child(1) {
-      animation-delay: 0s;
-    }
-
-    .ascii:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-
-    .ascii:nth-child(3) {
-      animation-delay: 0.4s;
-    }
-
-    .ascii:nth-child(4) {
-      animation-delay: 0.6s;
-    }
-
-    .ascii:nth-child(5) {
-      animation-delay: 0.8s;
-    }
-
-    .ascii:nth-child(6) {
-      animation-delay: 1s;
-    }
-
-    @keyframes slideAndFade {
-      0% {
-        opacity: 0;
-        transform: translateX(-40px);
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
       }
       50% {
-        opacity: 1;
-        transform: translateX(40px);
-      }
-      80% {
-        opacity: 1;
-        transform: translateX(40px);
-      }
-      100% {
-        opacity: 0;
-        transform: translateX(-40px);
+        transform: translateY(-20px);
       }
     }
   </style>
 
-  <text class="ascii" x="-40" y="0" dominant-baseline="text-before-edge">
+  <text class="ascii" x="0" y="0" dominant-baseline="text-before-edge">
     ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
   </text>
 
-  <text class="ascii" x="-40" y="22" dominant-baseline="text-before-edge">
+  <text class="ascii" x="0" y="22" dominant-baseline="text-before-edge">
     ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
   </text>
 
-  <text class="ascii" x="-40" y="44" dominant-baseline="text-before-edge">
+  <text class="ascii" x="0" y="44" dominant-baseline="text-before-edge">
      ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
   </text>
 
-  <text class="ascii" x="-40" y="66" dominant-baseline="text-before-edge">
+  <text class="ascii" x="0" y="66" dominant-baseline="text-before-edge">
       ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
   </text>
 
-  <text class="ascii" x="-40" y="88" dominant-baseline="text-before-edge">
+  <text class="ascii" x="0" y="88" dominant-baseline="text-before-edge">
        ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
   </text>
 
-  <text class="ascii" x="-40" y="110" dominant-baseline="text-before-edge">
+  <text class="ascii" x="0" y="110" dominant-baseline="text-before-edge">
        ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
   </text>
 </svg>
