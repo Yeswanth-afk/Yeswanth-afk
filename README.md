@@ -9,8 +9,8 @@ yeswanth@github:~$ whoami
   alt="Yeswanth's Logo" 
   style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px 0;" />
 
-  I'm a full-stack developer passionate about Linux and AI/ML applications.  
-  I build robust web apps and integrate machine learning into real-world solutions.
+I'm a full-stack developer passionate about Linux and AI/ML applications.  
+I build robust web apps and integrate machine learning into real-world solutions.
 
 yeswanth@github:~$ cat projects.txt
   
