@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="100%" height="auto">
   <defs>
     <linearGradient id="lavenderGradient" x1="5%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#b4befe" />
@@ -12,22 +12,34 @@
       fill: url(#lavenderGradient);
       white-space: pre;
       opacity: 0;
-      transition: opacity 1s ease-in-out;
+      animation: fadeCycle 12s infinite;
     }
-    .ascii.active {
-      opacity: 1;
+
+    /* Each art fades in and out at different times */
+    #art1 { animation-delay: 0s; }
+    #art2 { animation-delay: 4s; }
+    #art3 { animation-delay: 8s; }
+
+    @keyframes fadeCycle {
+      0%   { opacity: 0; }
+      8%   { opacity: 1; }
+      25%  { opacity: 1; }
+      33%  { opacity: 0; }
+      100% { opacity: 0; }
     }
   </style>
 
-  <g id="art1" class="ascii active">
-    <text x="0" y="0">██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗</text>
-    <text x="0" y="22">╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝</text>
-    <text x="0" y="44"> ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗</text>
-    <text x="0" y="66">  ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║</text>
-    <text x="0" y="88">   ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║</text>
-    <text x="0" y="110">   ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝</text>
+  <!-- ASCII Art 1 -->
+  <g id="art1" class="ascii">
+    <text x="-40" y="0">██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗</text>
+    <text x="-40" y="22">╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝</text>
+    <text x="-40" y="44"> ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗</text>
+    <text x="-40" y="66">  ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║</text>
+    <text x="-40" y="88">   ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║</text>
+    <text x="-40" y="110">   ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝</text>
   </g>
 
+  <!-- ASCII Art 2 -->
   <g id="art2" class="ascii">
     <text x="0" y="0">__   _______ ______        ___    _   _ _____ _   _   ____  </text>
     <text x="0" y="22">\ \ / / ____/ ___\ \      / / \  | \ | |_   _| | | | / ___| </text>
@@ -36,6 +48,7 @@
     <text x="0" y="88">  |_| |_____|____/  \_/\_/_/   \_\_| \_| |_| |_| |_| |____/ </text>
   </g>
 
+  <!-- ASCII Art 3 -->
   <g id="art3" class="ascii">
     <text x="0" y="0">oooooo   oooo oooooooooooo  .oooooo..o oooooo   oooooo     oooo       .o.       ooooo      ooo ooooooooooooo ooooo   ooooo       .oooooo..o</text>
     <text x="0" y="22"> `888.   .8'  `888'     `8 d8P'    `Y8  `888.    `888.     .8'       .888.      `888b.     `8' 8'   888   `8 `888'   `888'      d8P'    `Y8</text>
@@ -46,14 +59,3 @@
     <text x="0" y="132">    o888o     o888ooooood8 8""88888P'        `8'      `8'       o88o     o8888o o8o        `8      o888o     o888o   o888o      8""88888P' </text>
   </g>
 </svg>
-
-<script>
-  const arts = document.querySelectorAll('.ascii');
-  let current = 0;
-
-  setInterval(() => {
-    arts[current].classList.remove('active');
-    current = (current + 1) % arts.length;
-    arts[current].classList.add('active');
-  }, 4000); // switch every 4 seconds
-</script>
