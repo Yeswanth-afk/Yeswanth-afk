@@ -55,18 +55,18 @@ yeswanth@github:~$ <span class="command">ls tech_stack/</span>
 📁 Languages:         Python, JavaScript  
 📁 Frameworks:        Flask, TensorFlow  
 📁 Tools:             Git, GitHub, OpenCV, Jupyter  
-📁 OS & Shell:        Linux, Bash
+📁 OS &amp; Shell:        Linux, Bash
 
 yeswanth@github:~$ <span class="command">nano learning.txt</span>
 
 📘 Currently Learning:
   - Advanced Full-Stack Development
-  - Linux Administration & Scripting
+  - Linux Administration &amp; Scripting
 
 yeswanth@github:~$ <span class="command">./contact_me.sh</span>
 
 📫 Email: yeswanthshanmugam@gmail.com  
-💬 Always open to tech chats & collabs!
+💬 Always open to tech chats &amp; collabs!
 
 yeswanth@github:~$ <span class="command">echo "Thanks for stopping by!"</span>  
 <span class="success">✅ Thanks for visiting my profile! 🚀</span>
