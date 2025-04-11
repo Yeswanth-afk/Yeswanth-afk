@@ -1,34 +1,17 @@
-<svg width="100%" height="200px" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1000 200">
   <style>
-    .typing {
+    .ascii-art {
       font-family: monospace;
       font-size: 20px;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 4px solid black;
-      width: 0;
-      animation: typing 5s steps(60) 1s forwards, blink-caret 0.75s step-end infinite;
-    }
-
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
-    }
-
-    @keyframes blink-caret {
-      50% {
-        border-color: transparent;
-      }
+      white-space: pre;
     }
   </style>
-  <text class="typing" x="10" y="40">██████╗ ███████╗████████╗███████╗██████╗ ██╗   ██╗████████╗██████╗</text>
-  <text class="typing" x="10" y="70">██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔══██╗██║   ██║╚══██╔══╝██╔══██╗</text>
-  <text class="typing" x="10" y="100">██████╦╝█████╗     ██║   █████╗  ██████╦╝██║   ██║   ██║   ██████╦╝</text>
-  <text class="typing" x="10" y="130">██╔══██╗██╔══╝     ██║   ██╔══╝  ██╔══██╗██║   ██║   ██║   ██╔══██╗</text>
-  <text class="typing" x="10" y="160">██████╦╝███████╗   ██║   ███████╗██████╦╝╚██████╔╝   ██║   ██████╦╝</text>
-  <text class="typing" x="10" y="190">╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═════╝  ╚═════╝    ╚═╝   ╚═════╝</text>
+  <text class="ascii-art" x="10" y="30">
+    ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
+    ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
+     ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
+      ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
+       ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
+       ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
+  </text>
 </svg>
