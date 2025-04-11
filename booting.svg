@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200">
+  <rect x="0" y="0" width="500" height="200" fill="none" />
+  <defs>
+    <linearGradient id="lavenderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b4befe; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cba6f7; stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <text id="loadingText" x="50" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)">
+    Loading...
+    <animate attributeName="opacity" from="1" to="0" dur="2s" begin="0s" fill="freeze"/>
+  </text>
+
+  <text id="bootingText" x="50" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)" opacity="0">
+    Booting... please wait.
+    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="2s" fill="freeze"/>
+    <animate attributeName="opacity" from="1" to="0" dur="2s" begin="5s" fill="freeze"/>
+  </text>
+
+  <text id="profileText" x="50" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)" opacity="0">
+    Profile Loaded.
+    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="6s" fill="freeze"/>
+    <animate attributeName="opacity" from="1" to="0" dur="2s" begin="8s" fill="freeze"/>
+  </text>
+
+  <text id="staticPrompt" x="50" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)" opacity="0">
+    yeswanth@github:~$ whoami
+    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="9s" fill="freeze"/>
+  </text>
+</svg>
+
+This is perfect 
