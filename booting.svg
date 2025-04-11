@@ -29,5 +29,3 @@
     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="9s" fill="freeze"/>
   </text>
 </svg>
-
-This is perfect 
