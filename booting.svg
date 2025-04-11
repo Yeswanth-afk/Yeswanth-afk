@@ -9,7 +9,7 @@
   <style>
     .terminal {
       font-family: monospace;
-      font-size: 24px;
+      font-size: 18px;
       fill: url(#lavenderGradient);
     }
     .ascii {
@@ -52,11 +52,11 @@
 
   <!-- Greeting Text -->
   <text class="greeting" x="0" y="90">
-    👋 Hi, I'm Yeswanth S
+    👋 Hi, I'm 
     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10s" fill="freeze"/>
   </text>
 
-  <!-- ASCII Art Banner (y values +20) -->
+  <!-- ASCII Art Banner (Y positions shifted +20px) -->
   <text class="ascii" x="-40" y="120" dominant-baseline="text-before-edge">
     ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
     <animate attributeName="opacity" from="0" to="1" dur="3s" begin="10s" repeatCount="indefinite" />
