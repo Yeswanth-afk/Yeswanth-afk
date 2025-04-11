@@ -11,25 +11,65 @@
       font-size: 14px;
       fill: url(#lavenderGradient);
       white-space: pre;
+      width: 0;
+      overflow: hidden;
+      display: inline-block;
+      animation: typing 4s steps(50) 1s forwards, blink-caret 0.75s step-end infinite;
+    }
+
+    .line {
+      display: block;
+    }
+
+    @keyframes typing {
+      100% {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink-caret {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    /* Delay each line to make it appear sequentially */
+    .line:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .line:nth-child(2) {
+      animation-delay: 4s;
+    }
+    .line:nth-child(3) {
+      animation-delay: 8s;
+    }
+    .line:nth-child(4) {
+      animation-delay: 12s;
+    }
+    .line:nth-child(5) {
+      animation-delay: 16s;
+    }
+    .line:nth-child(6) {
+      animation-delay: 20s;
     }
   </style>
 
-  <text class="ascii" x="-40" y="0" dominant-baseline="text-before-edge">
+  <text class="ascii line" x="-40" y="0" dominant-baseline="text-before-edge">
     ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
   </text>
-  <text class="ascii" x="-40" y="22" dominant-baseline="text-before-edge">
+  <text class="ascii line" x="-40" y="22" dominant-baseline="text-before-edge">
     ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
   </text>
-  <text class="ascii" x="-40" y="44" dominant-baseline="text-before-edge">
+  <text class="ascii line" x="-40" y="44" dominant-baseline="text-before-edge">
      ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
   </text>
-  <text class="ascii" x="-40" y="66" dominant-baseline="text-before-edge">
+  <text class="ascii line" x="-40" y="66" dominant-baseline="text-before-edge">
       ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
   </text>
-  <text class="ascii" x="-40" y="88" dominant-baseline="text-before-edge">
+  <text class="ascii line" x="-40" y="88" dominant-baseline="text-before-edge">
        ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
   </text>
-  <text class="ascii" x="-40" y="110" dominant-baseline="text-before-edge">
+  <text class="ascii line" x="-40" y="110" dominant-baseline="text-before-edge">
        ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
   </text>
 </svg>
