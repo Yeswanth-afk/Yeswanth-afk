@@ -7,24 +7,24 @@
     </linearGradient>
   </defs>
 
-  <text id="loadingText" x="50" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)">
+  <text id="loadingText" x="0" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)">
     Loading...
     <animate attributeName="opacity" from="1" to="0" dur="2s" begin="0s" fill="freeze"/>
   </text>
 
-  <text id="bootingText" x="50" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)" opacity="0">
+  <text id="bootingText" x="0" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)" opacity="0">
     Booting... please wait.
     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="2s" fill="freeze"/>
     <animate attributeName="opacity" from="1" to="0" dur="2s" begin="5s" fill="freeze"/>
   </text>
 
-  <text id="profileText" x="50" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)" opacity="0">
+  <text id="profileText" x="0" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)" opacity="0">
     Profile Loaded.
     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="6s" fill="freeze"/>
     <animate attributeName="opacity" from="1" to="0" dur="2s" begin="8s" fill="freeze"/>
   </text>
 
-  <text id="staticPrompt" x="50" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)" opacity="0">
+  <text id="staticPrompt" x="0" y="100" font-family="monospace" font-size="24" fill="url(#lavenderGradient)" opacity="0">
     yeswanth@github:~$ whoami
     <animate attributeName="opacity" from="0" to="1" dur="2s" begin="9s" fill="freeze"/>
   </text>
