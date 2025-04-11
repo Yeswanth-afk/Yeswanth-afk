@@ -30,22 +30,22 @@
   </style>
 
   <g class="ascii-group">
-    <text x="0" y="0" dominant-baseline="text-before-edge">
+    <text x="-40" y="0" dominant-baseline="text-before-edge">
       ██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
     </text>
-    <text x="0" y="22" dominant-baseline="text-before-edge">
+    <text x="-40" y="22" dominant-baseline="text-before-edge">
       ╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
     </text>
-    <text x="0" y="44" dominant-baseline="text-before-edge">
+    <text x="-40" y="44" dominant-baseline="text-before-edge">
        ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
     </text>
-    <text x="0" y="66" dominant-baseline="text-before-edge">
+    <text x="-40" y="66" dominant-baseline="text-before-edge">
         ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
     </text>
-    <text x="0" y="88" dominant-baseline="text-before-edge">
+    <text x="-40" y="88" dominant-baseline="text-before-edge">
          ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
     </text>
-    <text x="0" y="110" dominant-baseline="text-before-edge">
+    <text x="-40" y="110" dominant-baseline="text-before-edge">
          ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
     </text>
   </g>
