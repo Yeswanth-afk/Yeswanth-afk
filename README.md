@@ -3,7 +3,6 @@ yeswanth@github:~$ whoami
 
 👋 Hi, I'm Yeswanth S
 
-<!-- SVG image embedded here -->
 <img 
   src="https://raw.githubusercontent.com/Yeswanth-afk/Yeswanth-afk/main/terminal-card.svg" 
   alt="Yeswanth's Logo" 
