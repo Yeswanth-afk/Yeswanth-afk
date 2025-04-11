@@ -1,75 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1300" viewBox="0 0 1000 1300">
-  <foreignObject width="100%" height="100%">
-    <style>
-      .terminal {
-        width: 100%;
-        height: 100%;
-        background-color: #1e1e2e;
-        color: #cdd6f4;
-        font-family: 'Fira Code', monospace;
-        font-size: 16px;
-        padding: 10px; /* Removed padding */
-        white-space: pre;
-        line-height: 1.5;
-      }
-      .command { color: #89b4fa; }
-      .highlight { color: #f9e2af; }
-      .success { color: #a6e3a1; }
-      .header { color: #cba6f7; font-weight: bold; }
-      .link { color: #a6e3a1; text-decoration: underline; }
-      a { color: #a6e3a1; text-decoration: none; }
-    </style>
-    <div xmlns="http://www.w3.org/1999/xhtml" class="terminal">
-yeswanth@github:~$ <span class="command">whoami</span>
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes typing {
+      0% { width: 0; }
+      100% { width: 100%; }
+    }
 
-👋 Hi, I'm <span class="header">Yeswanth S</span>
+    .terminal-text {
+      font-family: monospace;
+      font-size: 20px;
+      fill: #d7ccc8;
+      stroke: #d7ccc8;
+      stroke-width: 0.5;
+      animation: typing 5s steps(30) infinite;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  </style>
 
-██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
-╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
- ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
-  ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
-   ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
-   ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
+  <rect width="100%" height="100%" fill="transparent"/>
 
-I'm a full-stack developer passionate about Linux and AI/ML applications.  
-I build robust web apps and integrate machine learning into real-world solutions.
+  <!-- Terminal text with typing animation -->
+  <text x="20" y="30" class="terminal-text">yeswanth@github:~$ whoami</text>
+  
+  <text x="20" y="60" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    👋 Hi, I'm Yeswanth S
+  </text>
+  <text x="20" y="90" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    I'm a full-stack developer passionate about Linux and AI/ML applications.
+  </text>
+  
+  <text x="20" y="120" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    🚀 Emotion Recognition App
+  </text>
+  <text x="20" y="150" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    A full-stack app that detects emotions from:
+  </text>
+  
+  <text x="20" y="180" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    📸 Images
+  </text>
+  <text x="20" y="210" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    🎥 Videos
+  </text>
+  <text x="20" y="240" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    📹 Live webcam feed
+  </text>
 
-yeswanth@github:~$ <span class="command">cat projects.txt</span>
+  <text x="20" y="270" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    🧠 Tech Stack:
+  </text>
+  <text x="20" y="300" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    Frontend: HTML, CSS, JS
+  </text>
+  <text x="20" y="330" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    Backend: Flask
+  </text>
+  <text x="20" y="360" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    ML: TensorFlow
+  </text>
+  <text x="20" y="390" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    CV: OpenCV
+  </text>
 
-🚀 Emotion Recognition App
-A full-stack app that detects emotions from:
-📸 Images
-🎥 Videos
-📹 Live webcam feed
+  <text x="20" y="420" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    📘 Currently Learning:
+  </text>
+  <text x="20" y="450" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    - Advanced Full-Stack Development
+  </text>
+  <text x="20" y="480" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    - Linux Administration & Scripting
+  </text>
 
-yeswanth@github:~$ <span class="command">echo "Tech Stack:"</span>
+  <text x="20" y="510" style="fill:#d7ccc8; font-family:monospace; font-size:16px;">
+    📫 Contact Me:
+  </text>
+  <text x="20" y="540" style="fill:#a6e3a1; font-family:monospace; font-size:16px;">
+    yeswanthshanmugam@gmail.com
+  </text>
 
-🧠 Tech Stack:
-  Frontend: HTML, CSS, JS
-  Backend: Flask
-  ML: TensorFlow
-  CV: OpenCV
-
-yeswanth@github:~$ <span class="command">ls tech_stack/</span>
-
-📁 Languages:         Python, JavaScript  
-📁 Frameworks:        Flask, TensorFlow  
-📁 Tools:             Git, GitHub, OpenCV, Jupyter  
-📁 OS &amp; Shell:        Linux, Bash
-
-yeswanth@github:~$ <span class="command">nano learning.txt</span>
-
-📘 Currently Learning:
-  - Advanced Full-Stack Development
-  - Linux Administration &amp; Scripting
-
-yeswanth@github:~$ <span class="command">./contact_me.sh</span>
-
-📫 Email: yeswanthshanmugam@gmail.com  
-💬 Always open to tech chats &amp; collabs!
-
-yeswanth@github:~$ <span class="command">echo "Thanks for stopping by!"</span>  
-<span class="success">✅ Thanks for visiting my profile! 🚀</span>
-    </div>
-  </foreignObject>
+  <text x="20" y="570" style="fill:#a6e3a1; font-family:monospace; font-size:16px;">
+    ✅ Thanks for visiting my profile! 🚀
+  </text>
 </svg>
