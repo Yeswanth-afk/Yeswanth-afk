@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="auto">
   <defs>
-    <!-- Dark Mode Gradient (Lavender) -->
+    <!-- Dark Mode Gradient -->
     <linearGradient id="lavenderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#b4befe" />
       <stop offset="100%" stop-color="#cba6f7" />
     </linearGradient>
 
-    <!-- Light Mode Gradient (Darker colors for contrast against white background) -->
+    <!-- Light Mode Gradient -->
     <linearGradient id="lightModeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6e6ea7" />
-      <stop offset="100%" stop-color="#8a7cfc" />
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#34495e" />
     </linearGradient>
   </defs>
 
@@ -33,15 +33,26 @@
       opacity: 0;
     }
 
-    /* Default gradient for dark mode */
+    /* Default gradient for light mode */
     .terminal, .ascii {
-      fill: url(#lavenderGradient);
+      fill: url(#lightModeGradient);
     }
 
-    /* Light mode gradient */
-    @media (prefers-color-scheme: light) {
+    /* Dark mode gradient */
+    @media (prefers-color-scheme: dark) {
       .terminal, .ascii {
-        fill: url(#lightModeGradient);
+        fill: url(#lavenderGradient);
+      }
+
+      .greeting {
+        fill: white;
+      }
+    }
+
+    /* Light mode greeting text */
+    @media (prefers-color-scheme: light) {
+      .greeting {
+        fill: black;
       }
     }
   </style>
