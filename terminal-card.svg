@@ -16,7 +16,7 @@
     /* Typing animation */
     text {
       opacity: 0;
-      animation: typing 3s steps(60) 1s forwards;
+      animation: typing 3s steps(60) 0s forwards, loopTyping 6s steps(60) infinite;
     }
 
     /* Typing animation for each character */
@@ -29,7 +29,20 @@
       }
     }
 
-    /* Delayed typing for each line */
+    /* Infinite loop animation */
+    @keyframes loopTyping {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Delay for each line's typing to start */
     text:nth-child(1) {
       animation-delay: 0s;
     }
